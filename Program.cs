@@ -76,7 +76,11 @@ namespace Tamrin7
 
         }
     
-        
+        /// <summary>
+        /// Soal 2
+        /// </summary>
+        /// <param name="txt"></param>
+        /// <returns></returns>
         public static bool PalindromeString(string txt)
         {
             if (txt.Length <= 1)
@@ -98,6 +102,23 @@ namespace Tamrin7
         }
     
 
+        /// <summary>
+        /// Soal 3
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        public static int FindBinary(int number)
+        {
+            if(number == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return FindBinary(number % 2 * number / 2);
+            }
+
+        }
 
     }
 
